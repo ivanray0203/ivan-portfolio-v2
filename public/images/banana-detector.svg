@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" font-family="Inter, Arial, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fef08a"/>
+      <stop offset="1" stop-color="#84cc16"/>
+    </linearGradient>
+    <linearGradient id="leaf" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#22c55e"/>
+      <stop offset="1" stop-color="#15803d"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <!-- Background leaves -->
+  <g fill="url(#leaf)" opacity="0.55">
+    <path d="M-20 520C40 360 140 260 300 220 220 330 120 430-20 520Z"/>
+    <path d="M820 520C760 340 660 250 520 230 590 340 690 440 820 520Z"/>
+  </g>
+  <path d="M60 470C120 380 190 310 290 240" stroke="#166534" stroke-width="4" fill="none" opacity="0.5"/>
+  <!-- Phone -->
+  <g transform="translate(290 40)">
+    <rect width="220" height="430" rx="34" fill="#111827"/>
+    <rect x="12" y="12" width="196" height="406" rx="24" fill="#f0fdf4"/>
+    <rect x="80" y="22" width="60" height="14" rx="7" fill="#111827"/>
+    <!-- Camera view -->
+    <rect x="24" y="50" width="172" height="200" rx="16" fill="#bbf7d0"/>
+    <g transform="translate(110 150) rotate(-25)">
+      <path d="M0-80C46-60 60 20 0 80-60 20-46-60 0-80Z" fill="url(#leaf)"/>
+      <path d="M0-78V78" stroke="#14532d" stroke-width="3"/>
+      <g stroke="#14532d" stroke-width="1.5" opacity="0.6"><path d="M0-50l26 14M0-20l32 14M0 10l30 14M0-50l-26 14M0-20l-32 14M0 10l-30 14"/></g>
+      <circle cx="18" cy="-8" r="9" fill="#92400e" opacity="0.85"/>
+      <circle cx="-14" cy="28" r="6" fill="#92400e" opacity="0.75"/>
+    </g>
+    <!-- Scan corners -->
+    <g stroke="#16a34a" stroke-width="4" fill="none" stroke-linecap="round">
+      <path d="M40 80V66h14M180 80V66h-14M40 220v14h14M180 220v14h-14"/>
+    </g>
+    <rect x="36" y="140" width="148" height="3" fill="#22c55e" opacity="0.8"/>
+    <!-- Result card -->
+    <rect x="24" y="266" width="172" height="96" rx="14" fill="#ffffff" stroke="#dcfce7"/>
+    <text x="38" y="290" font-size="11" fill="#6b7280" font-weight="600">AI DIAGNOSIS</text>
+    <text x="38" y="312" font-size="16" fill="#111827" font-weight="800">Leaf Spot</text>
+    <rect x="38" y="324" width="144" height="8" rx="4" fill="#dcfce7"/>
+    <rect x="38" y="324" width="124" height="8" rx="4" fill="#16a34a"/>
+    <text x="38" y="350" font-size="11" fill="#16a34a" font-weight="700">86% confidence</text>
+    <rect x="24" y="374" width="172" height="34" rx="17" fill="#16a34a"/>
+    <text x="110" y="396" text-anchor="middle" font-size="13" fill="#ffffff" font-weight="700">See treatment</text>
+  </g>
+  <!-- AI sparkle -->
+  <g transform="translate(560 120)" fill="#ffffff">
+    <path d="M0-34C4-8 8-4 34 0 8 4 4 8 0 34-4 8-8 4-34 0-8-4-4-8 0-34Z"/>
+    <path d="M50 40c2 12 4 14 16 16-12 2-14 4-16 16-2-12-4-14-16-16 12-2 14-4 16-16Z" opacity="0.8"/>
+  </g>
+</svg>
